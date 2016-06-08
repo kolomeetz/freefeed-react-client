@@ -4,7 +4,9 @@ const {request, response, fail} = ActionHelpers;
 
 import _ from 'lodash';
 import {userParser, postParser} from '../utils';
-import {frontendPreferences as frontendPrefsConfig} from '../config';
+import config from '../config';
+
+const frontendPrefsConfig = config.frontendPreferences;
 
 export function title(state = '', action) {
   switch (action.type) {

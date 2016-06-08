@@ -1,6 +1,9 @@
 import fetch from 'isomorphic-fetch';
 import {getToken} from './auth';
-import {api as apiConfig, frontendPreferences as frontendPrefsConfig} from '../config';
+import config from '../config';
+
+const apiConfig = config.api;
+const frontendPrefsConfig = config.frontendPreferences;
 
 const getRequestOptions = () => ({
   headers:{

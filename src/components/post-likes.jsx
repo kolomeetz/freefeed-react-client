@@ -21,7 +21,7 @@ const renderLike = (item, i, items) => (
   </li>
 );
 
-export default ({likes, showMoreLikes, post}) => {
+const PostLikes = ({ likes, showMoreLikes, post }) => {
   if (!likes.length) {
     return <div/>;
   }
@@ -45,3 +45,5 @@ export default ({likes, showMoreLikes, post}) => {
     </div>
   );
 };
+
+export default PostLikes;

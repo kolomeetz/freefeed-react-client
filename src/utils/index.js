@@ -1,5 +1,7 @@
-import {frontendPreferences as frontendPrefsConfig} from '../config';
+import config from '../config';
 import _ from 'lodash';
+
+const frontendPrefsConfig = config.frontendPreferences;
 
 export function getCookie(name) {
   const begin = document.cookie.indexOf(name);
@@ -99,7 +101,6 @@ export function pluralForm(n, singular, plural = null, format = 'n w') {
 }
 
 import URLFinder from 'ff-url-finder';
-import config from '../config';
 
 export const finder = new URLFinder(
   ['ru', 'com', 'net', 'org', 'info', 'gov', 'edu', 'рф', 'ua'],

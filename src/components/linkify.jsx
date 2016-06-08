@@ -4,8 +4,9 @@ import {finder} from '../utils';
 import UserName from './user-name';
 import {shorten} from 'ff-url-finder';
 import {LINK, AT_LINK, LOCAL_LINK, EMAIL, HASHTAG, ARROW} from '../utils/link-types';
-import {search as searchConfig} from '../config';
+import config from '../config';
 
+const searchConfig = config.search;
 const MAX_URL_LENGTH = 50;
 
 class Linkify extends React.Component {

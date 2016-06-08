@@ -12,7 +12,6 @@ import PieceOfText from './piece-of-text';
 import Textarea from 'react-textarea-autosize';
 import throbber16 from 'assets/images/throbber-16.gif';
 import Dropzone from './dropzone';
-import {api as apiConfig} from '../config';
 import {getToken} from '../services/auth';
 import PostMoreMenu from './post-more-menu';
 import EmbedlyLink from './embedly-link';

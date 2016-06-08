@@ -3,9 +3,11 @@ import {connect} from 'react-redux';
 import {signUpChange, signUp, signUpEmpty} from '../redux/action-creators';
 import {preventDefault} from '../utils';
 import LoaderContainer from './loader-container';
-import {captcha as captchaConfig} from '../config';
+import config from '../config';
 import Recaptcha from 'react-google-recaptcha';
 import validator from 'validator';
+
+const captchaConfig = config.captcha;
 
 function mapStateToProps(state) {
   return {...state.signUpForm};

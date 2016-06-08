@@ -143,7 +143,6 @@ export const requestsMiddleware = store => next => action => {
 
 import {init} from '../services/realtime';
 import {getPostWithAllComments} from '../services/api';
-import {frontendPreferences as frontendPrefsConfig} from '../config';
 
 const isPostLoaded = ({posts}, postId) => posts[postId];
 const iLikedPost = ({user, posts}, postId) => {
